@@ -1,0 +1,38 @@
+[
+  {
+    "model": "B0_intercept_only",
+    "r2": -0.0005,
+    "rmse": 329095373.0761,
+    "pearson_r": 0.0,
+    "pearson_p": 1.0,
+    "n_features": 0,
+    "n_val": 132
+  },
+  {
+    "model": "B1_engagement_only",
+    "r2": 0.0258,
+    "rmse": 324744380.4538,
+    "pearson_r": 0.1634,
+    "pearson_p": 0.061194,
+    "n_features": 2,
+    "n_val": 132
+  },
+  {
+    "model": "B2_metadata_only",
+    "r2": 0.3642,
+    "rmse": 262353984.8855,
+    "pearson_r": 0.6493,
+    "pearson_p": 0.0,
+    "n_features": 18,
+    "n_val": 132
+  },
+  {
+    "model": "B3_metadata_plus_engagement",
+    "r2": 0.3633,
+    "rmse": 262539095.7091,
+    "pearson_r": 0.6489,
+    "pearson_p": 0.0,
+    "n_features": 20,
+    "n_val": 132
+  }
+]

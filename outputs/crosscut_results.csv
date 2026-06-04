@@ -1,0 +1,9 @@
+cut,n,r2,pearson_r
+sequel=non_sequel,64,-0.0502,0.3158
+sequel=sequel_proxy,23,0.6711,0.8383
+high_budget,45,0.1817,0.4517
+low_budget,42,-0.4354,0.2755
+genre_action,35,-0.1511,0.2466
+genre_animation,6,0.4274,0.8483
+genre_comedy,22,0.4663,0.6855
+genre_drama,28,0.2102,0.5639

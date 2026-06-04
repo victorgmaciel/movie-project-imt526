@@ -1,0 +1,106 @@
+2026-05-27 11:36:29,918 | INFO | Loading TMDB metadata from data/raw/tmdb_metadata.csv
+2026-05-27 11:36:29,924 | INFO | TMDB shape: (1000, 7)
+2026-05-27 11:36:29,945 | WARNING | 'revenue' column not found in TMDB data — skipping log_revenue
+2026-05-27 11:36:29,950 | INFO | Loading semantic features from data/processed/movie_semantic_features.csv
+2026-05-27 11:51:59,338 | INFO | Loading TMDB metadata from data/raw/tmdb_metadata.csv
+2026-05-27 11:51:59,343 | INFO | TMDB shape: (1000, 7)
+2026-05-27 11:51:59,362 | WARNING | 'revenue' column not found in TMDB data — skipping log_revenue
+2026-05-27 11:51:59,366 | INFO | Loading semantic features from data/processed/movie_semantic_features.csv
+2026-05-27 11:51:59,367 | INFO | Semantic features shape: (553, 25)
+2026-05-27 11:51:59,375 | INFO | TMDB rows: 1000 | matched with semantic features: 554 (55.4%)
+2026-05-27 11:51:59,377 | INFO | Split distribution:
+split
+train    705
+val      150
+test     145
+2026-05-27 11:51:59,379 | INFO | Final table shape: (1000, 55)
+2026-05-27 11:51:59,379 | INFO | Columns: ['tmdb_id', 'title', 'split', 'release_year', 'release_month', 'popularity', 'vote_average', 'vote_count', 'log_budget', 'is_sequel_proxy', 'genre_ids', 'genre_ids_parsed', 'genre_action', 'genre_adventure', 'genre_animation', 'genre_comedy', 'genre_crime', 'genre_documentary', 'genre_drama', 'genre_family', 'genre_fantasy', 'genre_history', 'genre_horror', 'genre_music', 'genre_mystery', 'genre_romance', 'genre_scifi', 'genre_tv_movie', 'genre_thriller', 'genre_war', 'genre_western', 'log_revenue', 'comment_count', 'batch_count', 'valid_batch_count', 'hype_mean', 'hype_std', 'skepticism_mean', 'skepticism_std', 'purchase_intent_mean', 'purchase_intent_std', 'sequel_fatigue_mean', 'sequel_fatigue_std', 'nostalgia_mean', 'nostalgia_std', 'controversy_mean', 'controversy_std', 'cast_interest_mean', 'cast_interest_std', 'vfx_excitement_mean', 'vfx_excitement_std', 'story_confusion_mean', 'story_confusion_std', 'positive_sentiment_mean', 'positive_sentiment_std']
+2026-05-27 11:51:59,391 | INFO | Full table saved to data/processed/movie_table.csv
+2026-05-27 11:51:59,399 | INFO | train set: 705 rows -> data/processed/train.csv
+2026-05-27 11:51:59,402 | INFO | val set: 150 rows -> data/processed/val.csv
+2026-05-27 11:51:59,404 | INFO | test set: 145 rows -> data/processed/test.csv
+2026-05-27 11:51:59,404 | INFO | ============================================================
+2026-05-27 11:51:59,404 | INFO | DATA QUALITY REPORT
+2026-05-27 11:51:59,404 | INFO | Missing value rates for key columns:
+2026-05-27 11:51:59,404 | INFO |   log_revenue: 100.0% missing
+2026-05-27 11:51:59,404 | INFO |   comment_count: 44.6% missing
+2026-05-27 11:51:59,404 | INFO |   hype_mean: 100.0% missing
+2026-05-27 11:51:59,405 | INFO |   hype_std: 100.0% missing
+2026-05-27 11:51:59,405 | INFO |   skepticism_mean: 100.0% missing
+2026-05-27 11:51:59,405 | INFO |   skepticism_std: 100.0% missing
+2026-06-02 19:13:41,183 | INFO | Loading TMDB metadata from data/raw/tmdb_metadata.csv
+2026-06-02 19:13:41,186 | INFO | TMDB shape: (1000, 13)
+2026-06-02 19:13:41,203 | INFO | Loading semantic features from data/processed/movie_semantic_features.csv
+2026-06-02 19:13:41,206 | INFO | Semantic features shape: (553, 25)
+2026-06-02 19:13:41,211 | INFO | TMDB rows: 1000 | matched with semantic features: 546 (54.6%)
+2026-06-02 19:13:41,213 | INFO | Split distribution:
+split
+train    691
+val      155
+test     154
+2026-06-02 19:13:41,214 | INFO | Final table shape: (1000, 57)
+2026-06-02 19:13:41,214 | INFO | Columns: ['tmdb_id', 'title', 'split', 'release_year', 'release_month', 'runtime', 'popularity', 'vote_average', 'vote_count', 'log_budget', 'is_sequel_proxy', 'genre_ids', 'genre_ids_parsed', 'genre_action', 'genre_adventure', 'genre_animation', 'genre_comedy', 'genre_crime', 'genre_documentary', 'genre_drama', 'genre_family', 'genre_fantasy', 'genre_history', 'genre_horror', 'genre_music', 'genre_mystery', 'genre_romance', 'genre_scifi', 'genre_tv_movie', 'genre_thriller', 'genre_war', 'genre_western', 'revenue', 'log_revenue', 'comment_count', 'batch_count', 'valid_batch_count', 'hype_mean', 'hype_std', 'skepticism_mean', 'skepticism_std', 'purchase_intent_mean', 'purchase_intent_std', 'sequel_fatigue_mean', 'sequel_fatigue_std', 'nostalgia_mean', 'nostalgia_std', 'controversy_mean', 'controversy_std', 'cast_interest_mean', 'cast_interest_std', 'vfx_excitement_mean', 'vfx_excitement_std', 'story_confusion_mean', 'story_confusion_std', 'positive_sentiment_mean', 'positive_sentiment_std']
+2026-06-02 19:14:07,497 | INFO | Loading TMDB metadata from data/raw/tmdb_metadata.csv
+2026-06-02 19:14:07,500 | INFO | TMDB shape: (1000, 13)
+2026-06-02 19:14:07,517 | INFO | Loading semantic features from data/processed/movie_semantic_features.csv
+2026-06-02 19:14:07,519 | INFO | Semantic features shape: (553, 25)
+2026-06-02 19:14:07,523 | INFO | TMDB rows: 1000 | matched with semantic features: 546 (54.6%)
+2026-06-02 19:14:07,525 | INFO | Split distribution:
+split
+train    691
+val      155
+test     154
+2026-06-02 19:14:07,526 | INFO | Final table shape: (1000, 57)
+2026-06-02 19:14:07,526 | INFO | Columns: ['tmdb_id', 'title', 'split', 'release_year', 'release_month', 'runtime', 'popularity', 'vote_average', 'vote_count', 'log_budget', 'is_sequel_proxy', 'genre_ids', 'genre_ids_parsed', 'genre_action', 'genre_adventure', 'genre_animation', 'genre_comedy', 'genre_crime', 'genre_documentary', 'genre_drama', 'genre_family', 'genre_fantasy', 'genre_history', 'genre_horror', 'genre_music', 'genre_mystery', 'genre_romance', 'genre_scifi', 'genre_tv_movie', 'genre_thriller', 'genre_war', 'genre_western', 'revenue', 'log_revenue', 'comment_count', 'batch_count', 'valid_batch_count', 'hype_mean', 'hype_std', 'skepticism_mean', 'skepticism_std', 'purchase_intent_mean', 'purchase_intent_std', 'sequel_fatigue_mean', 'sequel_fatigue_std', 'nostalgia_mean', 'nostalgia_std', 'controversy_mean', 'controversy_std', 'cast_interest_mean', 'cast_interest_std', 'vfx_excitement_mean', 'vfx_excitement_std', 'story_confusion_mean', 'story_confusion_std', 'positive_sentiment_mean', 'positive_sentiment_std']
+2026-06-02 19:47:17,902 | INFO | Loading TMDB metadata from data/raw/tmdb_metadata.csv
+2026-06-02 19:47:17,905 | INFO | TMDB shape: (1000, 13)
+2026-06-02 19:47:17,923 | INFO | Loading semantic features from data/processed/movie_semantic_features.csv
+2026-06-02 19:47:17,924 | INFO | Semantic features shape: (553, 25)
+2026-06-02 19:47:17,929 | INFO | TMDB rows: 1000 | matched with semantic features: 546 (54.6%)
+2026-06-02 19:47:17,931 | INFO | Split distribution:
+split
+train    691
+val      155
+test     154
+2026-06-02 19:47:17,932 | INFO | Final table shape: (1000, 57)
+2026-06-02 19:47:17,932 | INFO | Columns: ['tmdb_id', 'title', 'split', 'release_year', 'release_month', 'runtime', 'popularity', 'vote_average', 'vote_count', 'log_budget', 'is_sequel_proxy', 'genre_ids', 'genre_ids_parsed', 'genre_action', 'genre_adventure', 'genre_animation', 'genre_comedy', 'genre_crime', 'genre_documentary', 'genre_drama', 'genre_family', 'genre_fantasy', 'genre_history', 'genre_horror', 'genre_music', 'genre_mystery', 'genre_romance', 'genre_scifi', 'genre_tv_movie', 'genre_thriller', 'genre_war', 'genre_western', 'revenue', 'log_revenue', 'comment_count', 'batch_count', 'valid_batch_count', 'hype_mean', 'hype_std', 'skepticism_mean', 'skepticism_std', 'purchase_intent_mean', 'purchase_intent_std', 'sequel_fatigue_mean', 'sequel_fatigue_std', 'nostalgia_mean', 'nostalgia_std', 'controversy_mean', 'controversy_std', 'cast_interest_mean', 'cast_interest_std', 'vfx_excitement_mean', 'vfx_excitement_std', 'story_confusion_mean', 'story_confusion_std', 'positive_sentiment_mean', 'positive_sentiment_std']
+2026-06-02 19:47:17,945 | INFO | Full table saved to data/processed/movie_table.csv
+2026-06-02 19:47:17,955 | INFO | train set: 691 rows -> data/processed/train.csv
+2026-06-02 19:47:17,958 | INFO | val set: 155 rows -> data/processed/val.csv
+2026-06-02 19:47:17,962 | INFO | test set: 154 rows -> data/processed/test.csv
+2026-06-02 19:47:17,962 | INFO | ============================================================
+2026-06-02 19:47:17,962 | INFO | DATA QUALITY REPORT
+2026-06-02 19:47:17,962 | INFO | Missing value rates for key columns:
+2026-06-02 19:47:17,962 | INFO |   log_revenue: 0.0% missing
+2026-06-02 19:47:17,962 | INFO |   comment_count: 45.4% missing
+2026-06-02 19:47:17,962 | INFO |   hype_mean: 100.0% missing
+2026-06-02 19:47:17,962 | INFO |   hype_std: 100.0% missing
+2026-06-02 19:47:17,962 | INFO |   skepticism_mean: 100.0% missing
+2026-06-02 19:47:17,962 | INFO |   skepticism_std: 100.0% missing
+2026-06-02 19:47:17,962 | INFO | Movies with revenue > 0: 847 / 1000
+2026-06-03 11:43:33,362 | INFO | Loading TMDB metadata from data/raw/tmdb_metadata.csv
+2026-06-03 11:43:33,366 | INFO | TMDB shape: (1000, 13)
+2026-06-03 11:43:33,384 | INFO | Loading semantic features from data/processed/movie_semantic_features.csv
+2026-06-03 11:43:33,386 | INFO | Semantic features shape: (553, 25)
+2026-06-03 11:43:33,391 | INFO | TMDB rows: 1000 | matched with semantic features: 546 (54.6%)
+2026-06-03 11:43:33,392 | INFO | Split distribution:
+split
+train    691
+val      155
+test     154
+2026-06-03 11:43:33,393 | INFO | Final table shape: (1000, 57)
+2026-06-03 11:43:33,393 | INFO | Columns: ['tmdb_id', 'title', 'split', 'release_year', 'release_month', 'runtime', 'popularity', 'vote_average', 'vote_count', 'log_budget', 'is_sequel_proxy', 'genre_ids', 'genre_ids_parsed', 'genre_action', 'genre_adventure', 'genre_animation', 'genre_comedy', 'genre_crime', 'genre_documentary', 'genre_drama', 'genre_family', 'genre_fantasy', 'genre_history', 'genre_horror', 'genre_music', 'genre_mystery', 'genre_romance', 'genre_scifi', 'genre_tv_movie', 'genre_thriller', 'genre_war', 'genre_western', 'revenue', 'log_revenue', 'comment_count', 'batch_count', 'valid_batch_count', 'hype_mean', 'hype_std', 'skepticism_mean', 'skepticism_std', 'purchase_intent_mean', 'purchase_intent_std', 'sequel_fatigue_mean', 'sequel_fatigue_std', 'nostalgia_mean', 'nostalgia_std', 'controversy_mean', 'controversy_std', 'cast_interest_mean', 'cast_interest_std', 'vfx_excitement_mean', 'vfx_excitement_std', 'story_confusion_mean', 'story_confusion_std', 'positive_sentiment_mean', 'positive_sentiment_std']
+2026-06-03 11:43:33,408 | INFO | Full table saved to data/processed/movie_table.csv
+2026-06-03 11:43:33,419 | INFO | train set: 691 rows -> data/processed/train.csv
+2026-06-03 11:43:33,423 | INFO | val set: 155 rows -> data/processed/val.csv
+2026-06-03 11:43:33,427 | INFO | test set: 154 rows -> data/processed/test.csv
+2026-06-03 11:43:33,427 | INFO | ============================================================
+2026-06-03 11:43:33,427 | INFO | DATA QUALITY REPORT
+2026-06-03 11:43:33,427 | INFO | Missing value rates for key columns:
+2026-06-03 11:43:33,427 | INFO |   log_revenue: 0.0% missing
+2026-06-03 11:43:33,427 | INFO |   comment_count: 45.4% missing
+2026-06-03 11:43:33,427 | INFO |   hype_mean: 46.2% missing
+2026-06-03 11:43:33,427 | INFO |   hype_std: 46.2% missing
+2026-06-03 11:43:33,427 | INFO |   skepticism_mean: 46.2% missing
+2026-06-03 11:43:33,427 | INFO |   skepticism_std: 46.2% missing
+2026-06-03 11:43:33,428 | INFO | Movies with revenue > 0: 847 / 1000

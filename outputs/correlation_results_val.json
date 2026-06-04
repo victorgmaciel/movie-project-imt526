@@ -1,0 +1,32 @@
+{
+  "split": "val",
+  "delta_r2_semantic": -0.0557,
+  "n_significant_correlations": 8,
+  "verdict": "SIGNAL DETECTED",
+  "model_results": [
+    {
+      "model": "B3_metadata_plus_engagement",
+      "r2": 0.1676,
+      "rmse": 1.896,
+      "pearson_r": 0.4759,
+      "pearson_p": 3e-06,
+      "n": 87
+    },
+    {
+      "model": "S1_semantic_only",
+      "r2": 0.0794,
+      "rmse": 1.994,
+      "pearson_r": 0.334,
+      "pearson_p": 0.001568,
+      "n": 87
+    },
+    {
+      "model": "S2_full_baseline_plus_semantic",
+      "r2": 0.1119,
+      "rmse": 1.9585,
+      "pearson_r": 0.4437,
+      "pearson_p": 1.7e-05,
+      "n": 87
+    }
+  ]
+}

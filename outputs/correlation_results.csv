@@ -1,0 +1,11 @@
+feature,pearson_r,pearson_p,spearman_r,spearman_p,n,significant_05,significant_10
+nostalgia_mean,0.3689,0.0,0.4153,0.0,338,1,1
+vfx_excitement_mean,0.3058,0.0,0.3425,0.0,338,1,1
+hype_mean,0.2891,0.0,0.3217,0.0,338,1,1
+positive_sentiment_mean,0.2228,3.6e-05,0.2108,9.4e-05,338,1,1
+skepticism_mean,-0.202,0.000186,-0.2341,1.4e-05,338,1,1
+purchase_intent_mean,0.1696,0.00175,0.1621,0.002806,338,1,1
+controversy_mean,-0.1573,0.003736,-0.2256,2.8e-05,338,1,1
+sequel_fatigue_mean,0.1491,0.006035,0.1837,0.00069,338,1,1
+story_confusion_mean,-0.0413,0.448905,-0.0299,0.583476,338,0,0
+cast_interest_mean,0.0034,0.950934,0.0238,0.663106,338,0,0

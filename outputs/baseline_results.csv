@@ -1,0 +1,5 @@
+model,r2,rmse,pearson_r,pearson_p,n_features,n_val
+B0_intercept_only,-0.0005,329095373.0761,0.0,1.0,0,132
+B1_engagement_only,0.0258,324744380.4538,0.1634,0.061194,2,132
+B2_metadata_only,0.3642,262353984.8855,0.6493,0.0,18,132
+B3_metadata_plus_engagement,0.3633,262539095.7091,0.6489,0.0,20,132

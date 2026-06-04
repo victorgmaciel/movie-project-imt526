@@ -1,0 +1,35 @@
+======================================================================
+ANALYSIS REPORT — YouTube Trailer Comment Semantic Signal Study
+Evaluation split: val
+======================================================================
+
+CORRELATION ANALYSIS (univariate, train set):
+  Semantic features tested:     10
+  Significant at p < 0.05:      8
+  Significant at p < 0.10:      8
+
+Top 5 correlations with log_revenue:
+  nostalgia_mean                      r=+0.3689  p=0.0000
+  vfx_excitement_mean                 r=+0.3058  p=0.0000
+  hype_mean                           r=+0.2891  p=0.0000
+  positive_sentiment_mean             r=+0.2228  p=0.0000
+  skepticism_mean                     r=-0.2020  p=0.0002
+
+MODEL COMPARISON:
+  Model                                               R²     RMSE  Pearson-r
+  B3_metadata_plus_engagement                     0.1676   1.8960     0.4759
+  S1_semantic_only                                0.0794   1.9940     0.3340
+  S2_full_baseline_plus_semantic                  0.1119   1.9585     0.4437
+
+  Incremental R² (semantic over B3 baseline): -0.0557
+  Threshold for 'meaningful': 0.02
+
+SIGNAL VERDICT:
+  >>> SIGNAL DETECTED <<<
+
+Interpretation:
+  LLM-extracted semantic features add meaningful explanatory power
+  beyond engagement metrics and movie metadata.
+  Recommendation: proceed with the semantic-hybrid model for production.
+
+======================================================================

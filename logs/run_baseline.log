@@ -1,0 +1,53 @@
+2026-05-27 11:44:41,154 | INFO | Loading train from data/processed/train.csv
+2026-05-27 11:58:03,393 | INFO | Loading train from data/processed/train.csv
+2026-05-27 11:58:03,400 | INFO | Loading val from data/processed/val.csv
+2026-05-27 12:03:17,197 | INFO | Loading train from data/processed/train.csv
+2026-05-27 12:03:17,209 | INFO | Loading val from data/processed/val.csv
+2026-05-27 12:03:30,905 | INFO | Loading train from data/processed/train.csv
+2026-05-27 12:03:30,912 | INFO | Loading val from data/processed/val.csv
+2026-05-27 12:07:24,251 | INFO | Loading train from data/processed/train.csv
+2026-05-27 12:07:24,258 | INFO | Loading val from data/processed/val.csv
+2026-05-27 12:07:24,271 | INFO | Train rows with valid revenue: 0 / 705
+2026-05-27 12:07:24,272 | INFO | Val rows with valid revenue:   0 / 150
+2026-05-27 17:51:25,554 | INFO | Loading train from data/processed/train.csv
+2026-05-27 17:51:25,561 | INFO | Loading val from data/processed/val.csv
+2026-05-27 18:48:11,951 | INFO | Loading train from data/processed/train.csv
+2026-05-27 18:48:11,955 | INFO | Loading val from data/processed/val.csv
+2026-06-02 19:49:00,806 | INFO | Loading train from data/processed/train.csv
+2026-06-02 19:49:00,811 | INFO | Loading val from data/processed/val.csv
+2026-06-02 19:49:00,822 | INFO | Train rows with valid revenue: 591 / 691
+2026-06-02 19:49:00,822 | INFO | Val rows with valid revenue:   132 / 155
+2026-06-02 19:49:00,823 | INFO | B0_intercept_only                        R²=-0.0005  RMSE=329095373.0761
+2026-06-02 19:49:00,828 | INFO | B1_engagement_only                       R²=0.0258  RMSE=324744380.4538  r=0.1634  p=0.0612
+2026-06-02 19:49:00,830 | INFO | B2_metadata_only                         R²=0.3642  RMSE=262353984.8855  r=0.6493  p=0.0000
+2026-06-02 19:49:00,833 | INFO | B3_metadata_plus_engagement              R²=0.3633  RMSE=262539095.7091  r=0.6489  p=0.0000
+2026-06-02 19:49:00,836 | INFO | Baseline results saved to outputs/baseline_results.json
+2026-06-02 19:49:00,837 | INFO | Baseline results saved to outputs/baseline_results.csv
+2026-06-02 19:49:00,837 | INFO | ============================================================
+2026-06-02 19:49:00,837 | INFO | BASELINE SUMMARY (validation set)
+2026-06-02 19:49:00,837 | INFO | Model                                          R²     RMSE Pearson-r
+2026-06-02 19:49:00,837 | INFO | B0_intercept_only                         -0.0005 329095373.0761   0.0000
+2026-06-02 19:49:00,837 | INFO | B1_engagement_only                         0.0258 324744380.4538   0.1634
+2026-06-02 19:49:00,837 | INFO | B2_metadata_only                           0.3642 262353984.8855   0.6493
+2026-06-02 19:49:00,837 | INFO | B3_metadata_plus_engagement                0.3633 262539095.7091   0.6489
+2026-06-02 19:49:00,837 | INFO | ============================================================
+2026-06-02 19:49:00,837 | INFO | The semantic model must beat B3 (metadata + engagement) on R² and RMSE.
+2026-06-03 11:43:34,273 | INFO | Loading train from data/processed/train.csv
+2026-06-03 11:43:34,278 | INFO | Loading val from data/processed/val.csv
+2026-06-03 11:43:34,289 | INFO | Train rows with valid revenue: 591 / 691
+2026-06-03 11:43:34,289 | INFO | Val rows with valid revenue:   132 / 155
+2026-06-03 11:43:34,290 | INFO | B0_intercept_only                        R²=-0.0005  RMSE=329095373.0761
+2026-06-03 11:43:34,294 | INFO | B1_engagement_only                       R²=0.0258  RMSE=324744380.4538  r=0.1634  p=0.0612
+2026-06-03 11:43:34,297 | INFO | B2_metadata_only                         R²=0.3642  RMSE=262353984.8855  r=0.6493  p=0.0000
+2026-06-03 11:43:34,299 | INFO | B3_metadata_plus_engagement              R²=0.3633  RMSE=262539095.7091  r=0.6489  p=0.0000
+2026-06-03 11:43:34,302 | INFO | Baseline results saved to outputs/baseline_results.json
+2026-06-03 11:43:34,304 | INFO | Baseline results saved to outputs/baseline_results.csv
+2026-06-03 11:43:34,304 | INFO | ============================================================
+2026-06-03 11:43:34,305 | INFO | BASELINE SUMMARY (validation set)
+2026-06-03 11:43:34,305 | INFO | Model                                          R²     RMSE Pearson-r
+2026-06-03 11:43:34,305 | INFO | B0_intercept_only                         -0.0005 329095373.0761   0.0000
+2026-06-03 11:43:34,305 | INFO | B1_engagement_only                         0.0258 324744380.4538   0.1634
+2026-06-03 11:43:34,305 | INFO | B2_metadata_only                           0.3642 262353984.8855   0.6493
+2026-06-03 11:43:34,305 | INFO | B3_metadata_plus_engagement                0.3633 262539095.7091   0.6489
+2026-06-03 11:43:34,305 | INFO | ============================================================
+2026-06-03 11:43:34,305 | INFO | The semantic model must beat B3 (metadata + engagement) on R² and RMSE.

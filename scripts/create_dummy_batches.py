@@ -1,0 +1,28 @@
+import json
+from pathlib import Path
+Path("data/sample").mkdir(parents=True, exist_ok=True)
+dummy_comments = [
+    "This trailer looks amazing. I am definitely watching opening weekend.",
+    "The visuals look great, but the story feels generic.",
+    "I loved the first movie, so I am excited for this one.",
+    "Not sure about this cast. The marketing feels weak.",
+    "This looks like another sequel nobody asked for.",
+    "The hype online seems real. People are talking about it everywhere.",
+    "I might wait for reviews before buying tickets.",
+    "The trailer gave away too much, but it still looks fun.",
+    "This could be huge if word of mouth is good.",
+    "I am skeptical, but the director has a strong track record."
+]
+output_path = "data/sample/dummy_youtube_batches.jsonl"
+with open(output_path, "w", encoding="utf-8") as f:
+    for i in range(500):
+        record = {
+            "movie_id": f"dummy_{i % 25}",
+            "title": f"Dummy Movie {i % 25}",
+            "batch_id": f"batch_{i}",
+            "video_id": f"yt_dummy_{i % 25}",
+            "channel_id": f"UCdummy_{i % 25}",
+            "texts": dummy_comments
+        }
+        f.write(json.dumps(record) + "\n")
+print(f"Wrote 500 dummy batches to {output_path}")

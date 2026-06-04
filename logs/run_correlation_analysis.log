@@ -1,0 +1,48 @@
+2026-06-03 11:46:06,930 | INFO | Loading train from data/processed/train.csv
+2026-06-03 11:46:06,934 | INFO | Loading eval (val) from data/processed/val.csv
+2026-06-03 11:46:06,946 | INFO | Train (valid): 338 / 691 rows
+2026-06-03 11:46:06,946 | INFO | Eval  (valid): 87 / 155 rows
+2026-06-03 11:46:06,946 | INFO | ============================================================
+2026-06-03 11:46:06,946 | INFO | STEP 1: Univariate correlations (on train set)
+2026-06-03 11:46:06,948 | INFO |   hype_mean                      Pearson r=0.2891 (p=0.0000)  Spearman r=0.3217 (p=0.0000)
+2026-06-03 11:46:06,949 | INFO |   skepticism_mean                Pearson r=-0.2020 (p=0.0002)  Spearman r=-0.2341 (p=0.0000)
+2026-06-03 11:46:06,950 | INFO |   purchase_intent_mean           Pearson r=0.1696 (p=0.0018)  Spearman r=0.1621 (p=0.0028)
+2026-06-03 11:46:06,951 | INFO |   sequel_fatigue_mean            Pearson r=0.1491 (p=0.0060)  Spearman r=0.1837 (p=0.0007)
+2026-06-03 11:46:06,952 | INFO |   nostalgia_mean                 Pearson r=0.3689 (p=0.0000)  Spearman r=0.4153 (p=0.0000)
+2026-06-03 11:46:06,953 | INFO |   controversy_mean               Pearson r=-0.1573 (p=0.0037)  Spearman r=-0.2256 (p=0.0000)
+2026-06-03 11:46:06,954 | INFO |   cast_interest_mean             Pearson r=0.0034 (p=0.9509)  Spearman r=0.0238 (p=0.6631)
+2026-06-03 11:46:06,955 | INFO |   vfx_excitement_mean            Pearson r=0.3058 (p=0.0000)  Spearman r=0.3425 (p=0.0000)
+2026-06-03 11:46:06,956 | INFO |   story_confusion_mean           Pearson r=-0.0413 (p=0.4489)  Spearman r=-0.0299 (p=0.5835)
+2026-06-03 11:46:06,957 | INFO |   positive_sentiment_mean        Pearson r=0.2228 (p=0.0000)  Spearman r=0.2108 (p=0.0001)
+2026-06-03 11:46:06,960 | INFO | Correlation table saved.
+2026-06-03 11:46:06,960 | INFO | ============================================================
+2026-06-03 11:46:06,960 | INFO | STEP 2: Model comparison on val set
+2026-06-03 11:46:06,968 | INFO | Model                                               R²     RMSE Pearson-r
+2026-06-03 11:46:06,968 | INFO | B3_metadata_plus_engagement                     0.1676   1.8960   0.4759
+2026-06-03 11:46:06,968 | INFO | S1_semantic_only                                0.0794   1.9940   0.3340
+2026-06-03 11:46:06,968 | INFO | S2_full_baseline_plus_semantic                  0.1119   1.9585   0.4437
+2026-06-03 11:46:06,968 | INFO | Incremental R² from semantic features over B3: -0.0557
+2026-06-03 11:46:06,968 | INFO | ============================================================
+2026-06-03 11:46:06,968 | INFO | STEP 3: Feature importance
+2026-06-03 11:46:06,969 | INFO | Top 10 features by |coefficient|:
+2026-06-03 11:46:06,970 | INFO |   log_budget                          0.475413  [metadata]
+2026-06-03 11:46:06,970 | INFO |   vote_count                          0.442161  [metadata]
+2026-06-03 11:46:06,970 | INFO |   popularity                          0.269423  [metadata]
+2026-06-03 11:46:06,970 | INFO |   nostalgia_mean                      0.192857  [semantic]
+2026-06-03 11:46:06,970 | INFO |   is_sequel_proxy                     0.182594  [metadata]
+2026-06-03 11:46:06,970 | INFO |   sequel_fatigue_mean                 0.147885  [semantic]
+2026-06-03 11:46:06,970 | INFO |   purchase_intent_mean                -0.141613  [semantic]
+2026-06-03 11:46:06,970 | INFO |   genre_family                        0.140087  [genre]
+2026-06-03 11:46:06,970 | INFO |   skepticism_mean                     -0.127799  [semantic]
+2026-06-03 11:46:06,970 | INFO |   genre_comedy                        -0.124180  [genre]
+2026-06-03 11:46:06,970 | INFO | ============================================================
+2026-06-03 11:46:06,970 | INFO | STEP 4: Cross-cut validation
+2026-06-03 11:46:06,972 | INFO |   sequel=non_sequel  n=64  R²=-0.0502  r=0.3158
+2026-06-03 11:46:06,973 | INFO |   sequel=sequel_proxy  n=23  R²=0.6711  r=0.8383
+2026-06-03 11:46:06,974 | INFO |   budget_tier=high_budget  n=45  R²=0.1817  r=0.4517
+2026-06-03 11:46:06,976 | INFO |   budget_tier=low_budget  n=42  R²=-0.4354  r=0.2755
+2026-06-03 11:46:06,977 | INFO |   genre_action  n=35  R²=-0.1511  r=0.2466
+2026-06-03 11:46:06,978 | INFO |   genre_animation  n=6  R²=0.4274  r=0.8483
+2026-06-03 11:46:06,979 | INFO |   genre_comedy  n=22  R²=0.4663  r=0.6855
+2026-06-03 11:46:06,979 | INFO |   genre_drama  n=28  R²=0.2102  r=0.5639
+2026-06-03 11:46:06,981 | INFO | Report written to outputs/analysis_report_val.txt
