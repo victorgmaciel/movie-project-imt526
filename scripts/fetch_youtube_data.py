@@ -18,14 +18,7 @@ from datetime import date
 from pathlib import Path
 
 API_KEYS = [
-    "AIzaSyCA98_VUwomQo-aKu-9mLdl_rU_lPGS_Xs",
-    "AIzaSyAOQsVLxa5xS_9WlivIXNzEdWs9pyofIhI",
-    "AIzaSyAOQsVLxa5xS_9WlivIXNzEdWs9pyofIhI",
-    "AIzaSyAasuKBDfg1s_aIUuJoHxYoyNMseOjoMLQ",
-    "AIzaSyD_Jgs5SBv0MILPNATieA-QDlL9Gi1-Yjs",
-    "AIzaSyC5943CBjdS5cxlDcSm9eK_LP3BpRNuZDc",
-    "AIzaSyBaMWiFCKd2e1thSTOFde5gCwGbCtypJ6o",
-    "AIzaSyA8fj5R2CFa-0Xd2aGOcOPQA_6T1qpHhZ4",
+    "......"
 ]
 
 TMDB_CSV  = Path("data/raw/tmdb_metadata.csv")
